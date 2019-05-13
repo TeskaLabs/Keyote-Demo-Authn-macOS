@@ -705,7 +705,7 @@
             <objects>
                 <viewController title="Login" storyboardIdentifier="keyoteLoginViewController" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="KeyoteLoginViewController" customModule="authndemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="289"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nGy-Jj-hZA">
@@ -717,7 +717,7 @@
                                 </textFieldCell>
                             </textField>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-Cy-s4p">
-                                <rect key="frame" x="150" y="35" width="200" height="200"/>
+                                <rect key="frame" x="150" y="45" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Keyote Logo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="54v-aq-SlA">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -728,30 +728,37 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JgC-L0-dSC">
-                                <rect key="frame" x="18" y="233" width="464" height="17"/>
+                                <rect key="frame" x="18" y="252" width="464" height="17"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Loading ..." id="En0-ri-26W">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <progressIndicator wantsLayer="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Les-ap-Nkh">
+                                <rect key="frame" x="150" y="19" width="200" height="20"/>
+                            </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="nGy-Jj-hZA" secondAttribute="trailing" constant="20" id="HPM-PY-ZVP"/>
                             <constraint firstItem="JgC-L0-dSC" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="IhL-Of-58A"/>
                             <constraint firstItem="JgC-L0-dSC" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="SEr-Dm-9OX"/>
+                            <constraint firstAttribute="bottom" secondItem="Les-ap-Nkh" secondAttribute="bottom" constant="20" id="W6b-9W-MpF"/>
+                            <constraint firstAttribute="trailing" secondItem="Les-ap-Nkh" secondAttribute="trailing" constant="150" id="a4H-Nv-q7H"/>
                             <constraint firstItem="nGy-Jj-hZA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="h6j-jG-DSP"/>
                             <constraint firstAttribute="bottom" secondItem="nGy-Jj-hZA" secondAttribute="bottom" constant="20" id="kgI-58-PLs"/>
                             <constraint firstAttribute="trailing" secondItem="JgC-L0-dSC" secondAttribute="trailing" constant="20" id="owb-6I-UVj"/>
+                            <constraint firstItem="Les-ap-Nkh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="150" id="yJu-f7-2g5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelTF" destination="En0-ri-26W" id="lEv-y4-B6T"/>
+                        <outlet property="progressBar" destination="Les-ap-Nkh" id="anb-of-UYy"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389" y="602"/>
+            <point key="canvasLocation" x="1389" y="611.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="ItX-IE-MPM">
@@ -772,23 +779,31 @@
                 </windowController>
                 <customObject id="t6N-IP-flr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="115"/>
+            <point key="canvasLocation" x="508" y="135"/>
         </scene>
         <!--Keyote Authentication Demo-->
         <scene sceneID="i2G-i2-Kxp">
             <objects>
                 <viewController title="Keyote Authentication Demo" id="P8a-Fs-cgn" customClass="MainViewController" customModule="authndemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="sGm-y8-Xcs">
-                        <rect key="frame" x="0.0" y="0.0" width="877" height="494"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="684"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nas-ED-vP5">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="684"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="AppScreen" id="JHQ-Zr-hUl"/>
+                            </imageView>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="0xx-Zl-zxr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578.5" y="714"/>
+            <point key="canvasLocation" x="508" y="780"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AppScreen" width="1024" height="684"/>
         <image name="Keyote Logo" width="3508" height="3508"/>
     </resources>
 </document>

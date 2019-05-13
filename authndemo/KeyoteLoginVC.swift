@@ -11,6 +11,8 @@ import Cocoa
 class KeyoteLoginViewController: NSViewController {
 
     @IBOutlet weak var labelTF: NSTextFieldCell!
+    @IBOutlet weak var progressBar: NSProgressIndicator!
+
     var slotList:[CK_SLOT_ID] = []
 
     override func viewDidLoad() {
@@ -51,8 +53,14 @@ class KeyoteLoginViewController: NSViewController {
         
         if slotList.count == 0 { return }
         let appDelegate = NSApplication.shared.delegate as! AppDelegate
-
+        progressBar.startAnimation(self)
+        
         DispatchQueue.global(qos: .background).async {
+            defer {
+                DispatchQueue.main.async {
+                    self.progressBar.stopAnimation(self)
+                }
+            }
             do {
                 let session = try appDelegate.pkcs11.openSession(slotID: self.slotList[0], flags: CKF_SERIAL_SESSION)
                 let objectHandles = try session.findObjects(template: [
