@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB0672F52285AB2D008596BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0672F42285AB2D008596BD /* AppDelegate.swift */; };
+		DB0672F72285AB2D008596BD /* KeyoteLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0672F62285AB2D008596BD /* KeyoteLoginVC.swift */; };
+		DB0672F92285AB31008596BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0672F82285AB31008596BD /* Assets.xcassets */; };
+		DB0672FC2285AB31008596BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0672FA2285AB31008596BD /* Main.storyboard */; };
+		DB0673072286CAE6008596BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0673062286CAE6008596BD /* MainViewController.swift */; };
+		DB0673092286DFE9008596BD /* pkcs11.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0673082286DFE9008596BD /* pkcs11.swift */; };
+		DB0673132286E2DF008596BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB0673102286E2DF008596BD /* README.md */; };
+		DB4A2EF72286EEE200653A49 /* keyotepkcs11.so in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DB06730B2286E24F008596BD /* keyotepkcs11.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB4A2EF82286EEE300653A49 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB4A2EF72286EEE200653A49 /* keyotepkcs11.so in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB0672F12285AB2D008596BD /* authndemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = authndemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0672F42285AB2D008596BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB0672F62285AB2D008596BD /* KeyoteLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyoteLoginVC.swift; sourceTree = "<group>"; };
+		DB0672F82285AB31008596BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB0672FB2285AB31008596BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB0672FD2285AB31008596BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0672FE2285AB31008596BD /* authndemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = authndemo.entitlements; sourceTree = "<group>"; };
+		DB0673062286CAE6008596BD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DB0673082286DFE9008596BD /* pkcs11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pkcs11.swift; sourceTree = "<group>"; };
+		DB06730B2286E24F008596BD /* keyotepkcs11.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = keyotepkcs11.so; sourceTree = "<group>"; };
+		DB06730F2286E2DF008596BD /* pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs11.h; sourceTree = "<group>"; };
+		DB0673102286E2DF008596BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DB0673112286E2DF008596BD /* pkcs11t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs11t.h; sourceTree = "<group>"; };
+		DB0673122286E2DF008596BD /* pkcs11f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs11f.h; sourceTree = "<group>"; };
+		DB0673142286E406008596BD /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB0672EE2285AB2D008596BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB0672E82285AB2D008596BD = {
+			isa = PBXGroup;
+			children = (
+				DB06730B2286E24F008596BD /* keyotepkcs11.so */,
+				DB0672F32285AB2D008596BD /* authndemo */,
+				DB0672F22285AB2D008596BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0672F22285AB2D008596BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0672F12285AB2D008596BD /* authndemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0672F32285AB2D008596BD /* authndemo */ = {
+			isa = PBXGroup;
+			children = (
+				DB06730A2286E0D0008596BD /* pkcs11 */,
+				DB0673142286E406008596BD /* Bridging.h */,
+				DB0673062286CAE6008596BD /* MainViewController.swift */,
+				DB0672F62285AB2D008596BD /* KeyoteLoginVC.swift */,
+				DB0672F82285AB31008596BD /* Assets.xcassets */,
+				DB0672FA2285AB31008596BD /* Main.storyboard */,
+				DB0672FD2285AB31008596BD /* Info.plist */,
+				DB0672FE2285AB31008596BD /* authndemo.entitlements */,
+			);
+			path = authndemo;
+			sourceTree = "<group>";
+		};
+		DB06730A2286E0D0008596BD /* pkcs11 */ = {
+			isa = PBXGroup;
+			children = (
+				DB06730E2286E2DF008596BD /* oasis */,
+				DB0672F42285AB2D008596BD /* AppDelegate.swift */,
+				DB0673082286DFE9008596BD /* pkcs11.swift */,
+			);
+			path = pkcs11;
+			sourceTree = "<group>";
+		};
+		DB06730E2286E2DF008596BD /* oasis */ = {
+			isa = PBXGroup;
+			children = (
+				DB06730F2286E2DF008596BD /* pkcs11.h */,
+				DB0673102286E2DF008596BD /* README.md */,
+				DB0673112286E2DF008596BD /* pkcs11t.h */,
+				DB0673122286E2DF008596BD /* pkcs11f.h */,
+			);
+			path = oasis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0672F02285AB2D008596BD /* authndemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0673012285AB31008596BD /* Build configuration list for PBXNativeTarget "authndemo" */;
+			buildPhases = (
+				DB0672ED2285AB2D008596BD /* Sources */,
+				DB0672EE2285AB2D008596BD /* Frameworks */,
+				DB0672EF2285AB2D008596BD /* Resources */,
+				DB4A2EF82286EEE300653A49 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = authndemo;
+			productName = authndemo;
+			productReference = DB0672F12285AB2D008596BD /* authndemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB0672E92285AB2D008596BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = TeskaLabs;
+				TargetAttributes = {
+					DB0672F02285AB2D008596BD = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DB0672EC2285AB2D008596BD /* Build configuration list for PBXProject "authndemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB0672E82285AB2D008596BD;
+			productRefGroup = DB0672F22285AB2D008596BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0672F02285AB2D008596BD /* authndemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB0672EF2285AB2D008596BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0673132286E2DF008596BD /* README.md in Resources */,
+				DB0672F92285AB31008596BD /* Assets.xcassets in Resources */,
+				DB0672FC2285AB31008596BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB0672ED2285AB2D008596BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0673072286CAE6008596BD /* MainViewController.swift in Sources */,
+				DB0672F72285AB2D008596BD /* KeyoteLoginVC.swift in Sources */,
+				DB0673092286DFE9008596BD /* pkcs11.swift in Sources */,
+				DB0672F52285AB2D008596BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB0672FA2285AB31008596BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB0672FB2285AB31008596BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB0672FF2285AB31008596BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB0673002285AB31008596BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DB0673022285AB31008596BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P3Q6HRV8FN;
+				INFOPLIST_FILE = authndemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teskalabs.keyote.authndemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = authndemo/Bridging.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB0673032285AB31008596BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P3Q6HRV8FN;
+				INFOPLIST_FILE = authndemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teskalabs.keyote.authndemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = authndemo/Bridging.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB0672EC2285AB2D008596BD /* Build configuration list for PBXProject "authndemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0672FF2285AB31008596BD /* Debug */,
+				DB0673002285AB31008596BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0673012285AB31008596BD /* Build configuration list for PBXNativeTarget "authndemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0673022285AB31008596BD /* Debug */,
+				DB0673032285AB31008596BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB0672E92285AB2D008596BD /* Project object */;
+}
